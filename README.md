@@ -14,13 +14,13 @@ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=$DISPLAY \
     -u qtuser \
-    -t liveboxmonitor \
+    --name liveboxmonitor \
     liveboxmonitor
 ```
 
 Etape 3 : lancements ultérieurs en gardant le contexte (mot de passe, etc) :
 ```
-docker run -t liveboxmonitor
+docker start liveboxmonitor
 ```
 
 Et voilà :)
