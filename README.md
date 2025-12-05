@@ -20,6 +20,7 @@ docker run -it \
 
 Etape 3 : lancements ultérieurs en gardant le contexte (mot de passe, etc) :
 ```
+xhost +local:liveboxmonitor
 docker start liveboxmonitor
 ```
 
